@@ -35,7 +35,7 @@
         },
         computed: {
             mapUrl() {
-                const apiKey = 'AIzaSyDWQt_hxkjLkNSMuU8JMITWAMtQ3ttBMs8';
+                const apiKey = '';
                 return 'https://maps.googleapis.com/maps/api/staticmap?' +
                     'center=' + this.predicted.coords + '&zoom=13' +
                     '&size=' + this.mapWidth + 'x250&maptype=roadmap' +
