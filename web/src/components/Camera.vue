@@ -69,7 +69,7 @@
                 let file = this.$refs.image.files[0].name;
                 console.log(this.$refs.image.files[0]);
                 let this_ = this;
-                fetch('http://localhost:8080/info.json', {
+                fetch('http://51.137.111.108:8080/info.json', {
                     method: "GET",
                     headers: {
                         'Accept': 'application/json',
@@ -110,7 +110,7 @@
                         this_.submitted = false;
                         console.log(json);
                         let class_id = json;
-                        fetch('http://localhost:8080/info.json', {
+                        fetch('http://51.137.111.108:8080:8080/info.json', {
                             method: "GET",
                             headers: {
                                 'Accept': 'application/json',
@@ -142,7 +142,7 @@
 
 <style scoped>
     .camera {
-        background: black url('http://localhost:8080/background.jpg') no-repeat;
+        background: black url('http://51.137.111.108:8080/background.jpg') no-repeat;
         background-size: 160%;
         height: 50em;
     }
