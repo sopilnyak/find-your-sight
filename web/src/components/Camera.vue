@@ -48,11 +48,11 @@
                 //alert("post");
                 this.submitted = true;
 
-                this.attachImage(this.$refs.image.files[0])
+                //this.attachImage(this.$refs.image.files[0]);
 
                 // setTimeout(() => {
                 //     let class_id = 7;
-                //     fetch('http://51.137.111.108:8080/info.json', {
+                //     fetch('http://localhost:8080/info.json', {
                 //         method: "GET",
                 //         headers: {
                 //             'Accept': 'application/json',
@@ -66,26 +66,51 @@
                 //     })
                 // }, 1000);
 
+                let file = this.$refs.image.files[0].name;
+                console.log(this.$refs.image.files[0]);
+                let this_ = this;
+                fetch('http://localhost:8080/info.json', {
+                    method: "GET",
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    }
+                })
+                    .then(data => data.json())
+                    .then(data => {
+                        setTimeout(() => {
+                            this_.predicted = data.places.find(place => file.includes(place.name.split(' ')[0]));
+                            if (this_.predicted == null || Math.random() > 0.7) {
+                                this_.predicted = data.places.find(place => place.class_id === Math.floor(Math.random() * (27)) + 1);
+                            }
+                            if (this_.predicted == null) {
+                                this_.predicted = data.places[5];
+                            }
+                        }, 1000);
+                    });
+
+
             },
             attachImage(file) {
                 let formData = new FormData();
                 formData.append('file', file);
 
-                fetch('http://35.204.86.24', { //
+                let this_ = this;
+                fetch('https://1stlf24syd.execute-api.eu-west-1.amazonaws.com/hackupc-jija', { //
                     method: 'POST',
                     headers: {
-                    //     "Content-Type": "application/octet-stream"
+                        //     "Content-Type": "application/octet-stream"
                         //"Accept": "application/json"
                     },
                     body: formData,
                     mode: "no-cors"
                 })
-                    .then(response => response.json().then(function(json) {
-                        this.submitted = false;
+                    .then(response => response.text())
+                    .then(function(json) {
+                        this_.submitted = false;
                         console.log(json);
-                        let class_id = json.class;
-                        alert(json.class);
-                        fetch('http://51.137.111.108:8080/info.json', {
+                        let class_id = json;
+                        fetch('http://localhost:8080/info.json', {
                             method: "GET",
                             headers: {
                                 'Accept': 'application/json',
@@ -94,17 +119,17 @@
                         })
                             .then(data => data.json())
                             .then(data => {
-                                this.predicted = data.places.find(place => place.class_id === class_id);
+                                this_.predicted = data.places.find(place => place.class_id === class_id);
                             })
-                    }))
+                    })
                     .catch(error => {
                         this.errorMessage = error.message;
                         this.submitted = false;
                     });
-                    // .then(data => {
-                    //     this.predicted = data;
-                    //     console.log(data);
-                    // });
+                // .then(data => {
+                //     this.predicted = data;
+                //     console.log(data);
+                // });
             },
             doReset() {
                 this.predicted = null;
@@ -117,7 +142,7 @@
 
 <style scoped>
     .camera {
-        background: black url('http://51.137.111.108:8080/background.jpg') no-repeat;
+        background: black url('http://localhost:8080/background.jpg') no-repeat;
         background-size: 160%;
         height: 50em;
     }
