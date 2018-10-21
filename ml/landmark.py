@@ -49,9 +49,19 @@ class InferenceModel:
         return predicted_label
 
 
+def save_model_weights(model, path_to_weights_dir):
+    for i, layer in enumerate(model.layers):
+        weights = layer.get_weights()
+        lw_dir = os.path.join(path_to_weights_dir, f"layer{i:03d}")
+        os.makedirs(lw_dir, exist_ok=True)
+        for j, w in enumerate(weights):
+            np.save(os.path.join(lw_dir, f"{j:03d}"), w)
+
+
 def train(path_to_images):
     model = build_model(n_classes=N_CLASSES)
-    logging.info(f"ll weights: {model.layers[-1].weights}")
+    save_model_weights(model, os.path.join(LOG_DIR, 'weights_numpy'))
+
     model.summary()
     optimizer = keras.optimizers.Adam(lr=0.001, clipnorm=1)
     model.compile(optimizer=optimizer, loss='sparse_categorical_crossentropy',
