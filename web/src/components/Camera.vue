@@ -21,6 +21,9 @@
     import GLoading from "./GLoading.vue"
     import Results from "./Results.vue"
 
+    const jsonfile = require('jsonfile');
+    const file = 'info.json';
+
     export default {
         name: 'Camera',
         components: {
@@ -45,7 +48,7 @@
                 //alert("post");
                 this.submitted = true;
                 this.attachImage(this.$refs.image.files[0]);
-                console.log(this.$refs.image.files[0])
+                console.log(this.$refs.image.files[0]);
                 // this.predicted = {
                 //     'name': 'Sagrada Família',
                 //     'photo_url': 'https://aws-tiqets-cdn.imgix.net/images/content/3ca6b020234e47448d46547ff3ac6b3f.jpg',
@@ -55,6 +58,19 @@
                 //         'and every day thousands of tourists explore this curious but unfinished temple.',
                 //     'coords': '41.403561,2.174347'
                 // };
+                // let class_id = 27;
+                // fetch('http://localhost:8080/info.json', {
+                //     method: "GET",
+                //     headers: {
+                //         'Accept': 'application/json',
+                //         'Content-Type': 'application/json'
+                //     }
+                // }).then(data => data.json())
+                //     .then(data => {
+                //     console.log(data);
+                //     this.predicted = data.places.find(place => place.class_id === class_id);
+                //     console.log(this.predicted);
+                // })
             },
             attachImage(file) {
                 let formData = new FormData();
@@ -70,7 +86,18 @@
                     //mode: "no-cors"
                 })
                     .then(response => response.json().then(json => {
-                        console.log(json);
+                        let class_id = 27; // json.class
+                        fetch('http://localhost:8080/info.json', {
+                            method: "GET",
+                            headers: {
+                                'Accept': 'application/json',
+                                'Content-Type': 'application/json'
+                            }
+                        })
+                            .then(data => data.json())
+                            .then(data => {
+                                this.predicted = data.places.find(place => place.class_id === class_id);
+                            })
                     }))
                     .catch(error => {
                         console.error('Error: ', error);
@@ -144,11 +171,13 @@
     }
 
     .camera-input {
-        padding: 8em 3em 3em;
+        margin: 8em 3em 3em;
         position: absolute;
         left: 0;
         top: 0;
         opacity: 0;
+        height: 8em;
+        width: 16em;
     }
 
     .loading {
