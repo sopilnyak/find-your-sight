@@ -1,0 +1,6 @@
+data*
+.idea
+node_modules
+venv
+*.txt
+images*
