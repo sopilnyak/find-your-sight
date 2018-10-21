@@ -35,7 +35,7 @@
         },
         computed: {
             mapUrl() {
-                const apiKey = '';
+                const apiKey = 'AIzaSyA9YdD9czhNyfBLSZv6bp8xe1QVtRZLo7A';
                 return 'https://maps.googleapis.com/maps/api/staticmap?' +
                     'center=' + this.predicted.coords + '&zoom=13' +
                     '&size=' + this.mapWidth + 'x250&maptype=roadmap' +
@@ -53,7 +53,7 @@
 
 <style scoped>
     .results {
-        background: black url('http://localhost:8080/background.jpg') no-repeat;
+        background: black url('http://51.137.111.108:8080/background.jpg') no-repeat;
         background-size: 100%;
         min-height: 30em;
     }

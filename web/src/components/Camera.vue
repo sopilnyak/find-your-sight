@@ -47,47 +47,45 @@
                 this.doReset();
                 //alert("post");
                 this.submitted = true;
-                this.attachImage(this.$refs.image.files[0]);
-                console.log(this.$refs.image.files[0]);
-                // this.predicted = {
-                //     'name': 'Sagrada Família',
-                //     'photo_url': 'https://aws-tiqets-cdn.imgix.net/images/content/3ca6b020234e47448d46547ff3ac6b3f.jpg',
-                //     'description': 'The Sagrada Famíla (Basilica and Expiatory Church of the Holy Family) is the ' +
-                //         'most iconic symbol of Barcelona and the most visited landmark in the whole of Spain. It ' +
-                //         'is considered to be the best example of Modernist architecture designed by Antoni Gaudí ' +
-                //         'and every day thousands of tourists explore this curious but unfinished temple.',
-                //     'coords': '41.403561,2.174347'
-                // };
-                // let class_id = 27;
-                // fetch('http://localhost:8080/info.json', {
-                //     method: "GET",
-                //     headers: {
-                //         'Accept': 'application/json',
-                //         'Content-Type': 'application/json'
-                //     }
-                // }).then(data => data.json())
-                //     .then(data => {
-                //     console.log(data);
-                //     this.predicted = data.places.find(place => place.class_id === class_id);
-                //     console.log(this.predicted);
-                // })
+
+                this.attachImage(this.$refs.image.files[0])
+
+                // setTimeout(() => {
+                //     let class_id = 7;
+                //     fetch('http://51.137.111.108:8080/info.json', {
+                //         method: "GET",
+                //         headers: {
+                //             'Accept': 'application/json',
+                //             'Content-Type': 'application/json'
+                //         }
+                //     }).then(data => data.json())
+                //         .then(data => {
+                //         console.log(data);
+                //         this.predicted = data.places.find(place => place.class_id === class_id);
+                //         console.log(this.predicted);
+                //     })
+                // }, 1000);
+
             },
             attachImage(file) {
                 let formData = new FormData();
                 formData.append('file', file);
 
-                fetch('https://1stlf24syd.execute-api.eu-west-1.amazonaws.com/hackupc-jija', {
+                fetch('http://35.204.86.24', { //
                     method: 'POST',
                     headers: {
                     //     "Content-Type": "application/octet-stream"
-                        Accept: 'application/json',
+                        //"Accept": "application/json"
                     },
                     body: formData,
-                    //mode: "no-cors"
+                    mode: "no-cors"
                 })
-                    .then(response => response.json().then(json => {
-                        let class_id = 27; // json.class
-                        fetch('http://localhost:8080/info.json', {
+                    .then(response => response.json().then(function(json) {
+                        this.submitted = false;
+                        console.log(json);
+                        let class_id = json.class;
+                        alert(json.class);
+                        fetch('http://51.137.111.108:8080/info.json', {
                             method: "GET",
                             headers: {
                                 'Accept': 'application/json',
@@ -100,10 +98,9 @@
                             })
                     }))
                     .catch(error => {
-                        console.error('Error: ', error);
                         this.errorMessage = error.message;
                         this.submitted = false;
-                    })
+                    });
                     // .then(data => {
                     //     this.predicted = data;
                     //     console.log(data);
@@ -120,7 +117,7 @@
 
 <style scoped>
     .camera {
-        background: black url('http://localhost:8080/background.jpg') no-repeat;
+        background: black url('http://51.137.111.108:8080/background.jpg') no-repeat;
         background-size: 160%;
         height: 50em;
     }

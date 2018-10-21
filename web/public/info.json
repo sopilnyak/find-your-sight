@@ -1,126 +1,126 @@
 {
   "places": [
     {
-      "class_id": 1,
+      "class_id": 7,
       "name": "Basilica of the Sagrada Familia",
       "photo_url": "https://d3hne3c382ip58.cloudfront.net/files/uploads/bookmundi/resized/cmsfeatured/spain-attraction-la-sagrada-familia-1517554708-785X440.jpg",
       "description": "The Basílica i Temple Expiatori de la Sagrada Família is a large unfinished Roman Catholic church in Barcelona, designed by Catalan architect Antoni Gaudí (1852–1926). Gaudí's work on the building is part of a UNESCO World Heritage Site, and in November 2010 Pope Benedict XVI consecrated and proclaimed it a minor basilica, as distinct from a cathedral, which must be the seat of a bishop. It is anticipated that the building can be completed by 2026—the centenary of Gaudí's death.",
       "coords": "41.403195,2.17503"
     },
     {
-      "class_id": 2,
+      "class_id": 13,
       "name": "Gothic Quarter",
       "photo_url": "https://www.santjordihostels.com/wp-content/uploads/gothic_quarter_barcelona_05-500x333.jpg",
       "description": "The Gothic Quarter is the centre of the old city of Barcelona. It stretches from La Rambla to Via Laietana, and from the Mediterranean seafront to the Ronda de Sant Pere. It is a part of Ciutat Vella district. The quarter encompasses the oldest parts of the city of Barcelona, and includes the remains of the city's Roman wall and several notable medieval landmarks. El Call, the medieval Jewish quarter, is located within this area, along with the former Sinagoga Major. The Barri Gòtic retains a labyrinthine street plan, with many small streets opening out into squares. Most of the quarter is closed to regular traffic although open to service vehicles and taxis.",
       "coords": "41.382188,2.175169"
     },
     {
-      "class_id": 3,
+      "class_id": 27,
       "name": "The Font Mágica Fountain",
       "photo_url": "https://cdn02.visitbarcelona.com/files/5445-7623-Imagen/font-magica-montjuic-festes-costums-plaza-espanya-barcelona-pf-c1.jpg",
       "description": "Magic Fountain (Font Magica) — a combination display of water, music and light which was originally built in 1929 for the Barcelona International Exposition. It was restored in 1992 and provides a spectacular show every half hour. The fountain is situated below the Palau Nacional on the Montjuïc mountain and near the Plaça d'Espanya and Poble Espanyol de Barcelona. ",
       "coords": "41.371192,2.151652"
     },
     {
-      "class_id": 4,
+      "class_id": 23,
       "name": "Picasso Museum",
       "photo_url": "https://cdn02.visitbarcelona.com/files/5531-4706-imagenCAT/BarcelonaWalkingPicasso-T24-b_2.jpg",
       "description": "The Museu Picasso is one of the most extensive collections of artworks by the 20th-century Spanish artist Pablo Picasso. With 4,251 works exhibited by the painter, the museum has one of the most complete permanent collections of works. The museum is housed in five adjoining medieval palaces in Barcelona's La Ribera and is located on Montcada Street in the (Bank District) of Barcelona. It opened to the public on 9 March 1963, becoming the first museum dedicated to Picasso's work and the only one created during the artist's life. It has since been declared a museum of national interest by the Government of Catalonia.",
       "coords": "41.385216,2.180893"
     },
     {
-      "class_id": 5,
+      "class_id": 8,
       "name": "Camp Nou Stadium",
       "photo_url": "http://www.promptguides.com/barcelona/_photos/camp_nou/camp_nou_002.jpg",
       "description": "Camp Nou is the home stadium of FC Barcelona since its completion in 1957. With a seating capacity of 99 354, it is the largest stadium in Spain and Europe, and the third largest football stadium in the world in capacity. It has hosted two European Cup/Champions League finals in 1989 and 1999, two UEFA Cup Winners' Cup finals, four Inter-Cities Fairs Cup final games, five UEFA Super Cup final games, four Copa del Rey finals, two Copa de la Liga final games, twenty-one Supercopa de España final games, five matches including the opening game of the 1982 FIFA World Cup, two out of four matches at the 1964 European Nations' Cup and the football competition final at the 1992 Summer Olympics.",
       "coords": "41.380898,2.122820"
     },
     {
-      "class_id": 6,
+      "class_id": 22,
       "name": "Park Guell By Gaudi",
       "photo_url": "https://cdn.civitatis.com/guias/barcelona/fotos/parque-guell-entrada.jpg",
       "description": "Park Guell is one of the masterpieces of the Catalan architect Antoni Gaudi, who projected it in 1900. Inaugurated as a public park in 1926, it was listed as a UNESCO World Heritage Site in 1984, reconizing its patrimonial and cultural value as a symbol of modern architecture, being one of the biggest exponents of Gaudi's modernism. This playful urban park, the work of architect Antoni Gaudi, features peaceful greens, winding paths and many sculptures and mosaics designed by Gaudi himself. ",
       "coords": "41.41361,2.15278"
     },
     {
-      "class_id": 7,
+      "class_id": 4,
       "name": "Barcelona Cathedral",
       "photo_url": "https://barcelonando.com/wp-content/uploads/2018/07/barcelona-cathedral.jpg",
       "description": "The Cathedral of the Holy Cross and Saint Eulalia, also known as Barcelona Cathedral, is the Gothic cathedral and seat of the Archbishop of Barcelona, Spain. The cathedral was constructed from the thirteenth to fifteenth centuries, with the principal work done in the fourteenth century. The cloister, which encloses the Well of the Geese (Font de les Oques) was completed in 1448. In the late nineteenth century, the neo-Gothic façade was constructed over the nondescript exterior that was common to Catalan churches. The roof is notable for its gargoyles, featuring a wide range of animals, both domestic and mythical.",
       "coords": "41.383682,2.176591"
     },
     {
-      "class_id": 8,
+      "class_id": 5,
       "name": "Barcelona Zoo",
       "photo_url": "http://www.turismoencatalunya.es/images/bigAtrZooBarc.jpg",
       "description": "Barcelona Zoo is a zoo in the Parc de la Ciutadella in Barcelona. The Zoo was inaugurated in 1892 thanks to a donation of a private animal collection. Since then, Barcelona Zoo has grown year after year and now has over 8,000 animals of 400 species of wildlife animals.",
       "coords": "41.388123,2.186015"
     },
     {
-      "class_id": 9,
+      "class_id": 25,
       "name": "Poble Espanyol",
       "photo_url": "https://www.clorian.com/wp-content/uploads/2016/09/Poble_Espanyol_Barcelona.jpg",
       "description": "The Poble Espanyol is an open-air architectural museum in Barcelona, approximately 400 metres away from the Fountains of Montjuïc. Built for the 1929 Barcelona International Exposition, the museum consists of 117 full-scale buildings, which recreate Spanish villages. It also contains a theater, restaurants, artisan workshops and a museum of contemporary art.",
       "coords": "41.368809,2.148273"
     },
     {
-      "class_id": 10,
+      "class_id": 14,
       "name": "La Boqueria Food Market",
       "photo_url": "https://barcelona-home.com/blog/wp-content/upload/2013/11/boqueria-market-e1438953806105-955x508.jpg",
       "description": "The Mercat de Sant Josep de la Boqueria, often simply referred to as La Boqueria, is a large public market in the Ciudad Vieja district of Barcelona, and one of the city's foremost tourist landmarks, with an entrance from La Rambla, not far from the Liceo, Barcelona's opera house. The market has a very diverse selection of goods.",
       "coords": "41.38194,2.17194"
     },
     {
-      "class_id": 11,
+      "class_id": 18,
       "name": "Montjuic Hill",
       "photo_url": "https://ob9a8415roh4djoj110c31a1-wpengine.netdna-ssl.com/wp-content/uploads/2013/05/montjuic-barcelona.jpg",
       "description": "Montjuïc is a hill situated 173 meters above the city of Barcelona and a popular attraction among tourists in search of recreational activities, gorgeous museums, green spaces, unparalleled views of Barcelona, and even a bit of the city’s history.",
       "coords": "41.363998,2.167493"
     },
     {
-      "class_id": 12,
+      "class_id": 9,
       "name": "Casa Batllo",
       "photo_url": "https://cdn.getyourguide.com/img/tour_img-1072223-148.jpg",
       "description": "Casa Batllo is a building in the center of Barcelona. It was designed by Antoni Gaudí, and is considered one of his masterpieces. A remodel of a previously built house, it was redesigned in 1904 by Gaudí and has been refurbished several times after that. Gaudí's assistants Domènec Sugrañes i Gras, Josep Canaleta and Joan Rubió also contributed to the renovation project. The local name for the building is Casa dels ossos (House of Bones), as it has a visceral, skeletal organic quality.",
       "coords": "41.391640,2.164770"
     },
     {
-      "class_id": 13,
+      "class_id": 17,
       "name": "Montjuic Castle",
       "photo_url": "https://media-edg.barcelona.cat/wp-content/uploads/2015/05/1-2-3-2-10-DISE-Vista-panor%C3%A0mica-de-Barcelona-10-3-14-HEMAV-12.jpg",
       "description": "Montjuïc Castle is an imposing castle that dominates the city since 1640. It was primarily used to repress the people during two centuries. Repression of the anarchists in the XIX century and prison for the political prisoners under Franco. In 1940 Lluis Companys was executed here. He was the president of the Generalitat of Catalonia. Nowadays is the only place of the city where you can see a statue of Franco. It also shelters a military museum.",
       "coords": "41.36333,2.16611"
     },
     {
-      "class_id": 14,
+      "class_id": 10,
       "name": "Casa Mila",
       "photo_url": "https://cdn.getyourguide.com/img/tour_img-315009-148.jpg",
       "description": "Casa Milà is a modernist building in Barcelona. It was the last private residence designed by architect Antoni Gaudí and was built between 1906 and 1912. The building was commissioned in 1906 by Pere Milà and his wife Roser Segimon. At the time, it was controversial because of its undulating stone facade, twisting wrought iron balconies and designed by Josep Maria Jujol. Several structural innovations include a self-supporting stone façade, and a free-plan floor, underground garage and the spectacular terrace on the roof. In 1984, it was declared a World Heritage Site by UNESCO.",
       "coords": "41.390498,2.156999"
     },
     {
-      "class_id": 15,
+      "class_id": 1,
       "name": "Aquarium Barcelona",
       "photo_url": "https://destinacionbarcelona.com/wp-content/uploads/2017/01/tunel-aquarium-e1529528464536.jpg",
       "description": "Aquarium Barcelona is an aquarium located in Port Vell, a harbor in Barcelona. The 35 aquariums at the facility are home to 11,000 animals representing 450 species. The aquarium contains a total of 5,000,000 l. This includes an ocean tank for sharks, rays and other large fish, which is 36 m (118 ft) in diameter, 5 m (16 ft) deep, contains 3,700,000 l of water and has a 80-meter (260 ft) underwater tunnel. The Aquarium of Barcelona is part of the Aspro Parks.",
       "coords": "41.376839,2.184338"
     },
     {
-      "class_id": 16,
+      "class_id": 26,
       "name": "Montserrat",
       "photo_url": "https://cdn02.visitbarcelona.com/files/5531-5209-imagenCAT/BarcelonaTardaMontserrat-T24-b_O.jpg",
       "description": "Santa Maria de Montserrat is an abbey of the Order of Saint Benedict located on the mountain of Montserrat in Monistrol de Montserrat, Catalonia, Spain. It is notable for enshrining the image of the Virgin of Montserrat. The monastery was founded in the 11th century and rebuilt between 19th and 20th centuries, and still functions to this day, with over 70 monks. There have always been roughly 80 monks in residence.",
       "coords": "41.595776,1.829814"
     },
     {
-      "class_id": 17,
+      "class_id": 20,
       "name": "Palau de la Musica Orfeo Catalana",
       "photo_url": "https://www.barcelona-tourist-guide.com/images/ext/attractions/palau-de-la-musica-catalana/L550/palau-de-la-musica-catalana-barcelona-01.jpg",
       "description": "The Palau, an icon of modernist architecture in downtown Barcelona The Palau de la Música Catalana is one of the most representative monuments of the city and It is one of the most recommended tourist attractions of Barcelona. Built between 1905 and 1908 by the great architect Lluis Domènech i Montaner, the Palau de la Música Catalana is an architectural jewel of Catalonia and essential part of any visit to the city, as any of the most fascinating Gaudi buildings. This historical building, declared a World Heritage Site by UNESCO in 1997, offers an experience so magical that visitors fall in love with it. ",
       "coords": "41.38750,2.17556"
     },
     {
-      "class_id": 18,
+      "class_id": 6,
       "name": "Barceloneta Beach",
       "photo_url": "https://media.timeout.com/images/102767146/630/472/image.jpg",
       "description": "Located in the traditional fishing district, this is one of Barcelona's oldest and best-loved beaches. It is thought to have inspired Miguel de Cervantes as the setting for the fight between Don Quixote and the Knight of the White Moon. It was here that the knight errant was finally defeated and abandoned his quest.",
@@ -148,42 +148,42 @@
       "coords": "41.38806,2.18750"
     },
     {
-      "class_id": 22,
+      "class_id": 28,
       "name": "Tibidabo Amusement Park",
       "photo_url": "https://dreamguides.edreams.com/wp-content/uploads/sites/20/2011/03/tibidabo-theme-park-barcelona-750x400.jpg",
       "description": "Tibidabo Amusement Park is an amusement park located on Tibidabo in the Collserola Ridge in Barcelona. The park was built in 1899 by the entrepreneur Salvador Andreu and opened in 1905. The park is among the oldest in the world still functioning. It is Spain's longest running amusement park and Europe's third-oldest. Most of the original rides, some of which date to the turn of the 20th century, are still in use. The park is now owned by the Barcelona City Council.",
       "coords": "41.423042,2.119780"
     },
     {
-      "class_id": 23,
+      "class_id": 2,
       "name": "Arc de Triomf",
       "photo_url": "https://www.shbarcelona.com/blog/en/wp-content/uploads/2016/05/spain-1276209_1920-810x540.jpg",
       "description": "The Arc de Triomf is a triumphal arch in the city of Barcelona in Catalonia, Spain. It was built by architect Josep Vilaseca i Casanovas as the main access gate for the 1888 Barcelona World Fair. The arch crosses over the wide central promenade of the Passeig de Lluís Companys, leading to the Ciutadella Park that now occupies the site of the world fair. It is located at the northern end of the promenade, facing the Passeig de Sant Joan. ",
       "coords": "41.391052,2.180645"
     },
     {
-      "class_id": 24,
+      "class_id": 0,
       "name": "Anella Olimpica",
       "photo_url": "https://www.palausantjordi.cat/typo3temp/yag/26/Panoramica_Esplanada_Anella_2671_560d7893836.jpg",
       "description": "The Anella Olímpica is an Olympic Park located in the hill of Montjuïc, Barcelona, that was the main site for the 1992 Summer Olympics. The major facilities consist of the Olympic Stadium, or Estadi Olímpic Lluís Companys, the Palau Sant Jordi sports hall, the telecommunications tower designed by Santiago Calatrava, the National Physical Education Institute (INEFC) and the Picornell swimming pools. The Joan Antoni Samarach Olympic and Sports Museum is also located in the Olympic Ring.",
       "coords": "41.3632598,2.1518317"
     },
     {
-      "class_id": 25,
+      "class_id": 16,
       "name": "Mirador - Collserola Tower",
       "photo_url": "https://media-edg.barcelona.cat/wp-content/uploads/2017/10/04141235/Collserola_Tavisa-760x428.jpg",
       "description": "Torre de Collserola is a uniquely designed tower located on the Tibidabo hill in the Serra de Collserola, in Barcelona. It was designed by the architect Sir Norman Foster and by the Spanish civil engineers Julio Martínez Calzón and Manuel Julià Vilardell. The tower was built in 1991 by the construction company Cubiertas y MZOV S.A. for the 1992 Summer Olympics. It features a pod for floor space like many towers but uses guy wires for lateral support like a mast. Mainly used as a TV and radio transmitter, this futuristic design provides the highest viewpoint over the city. The top antenna reaches 288.4 m (946 ft) and the top of the pod, which has thirteen floors, reaches 152 m (499 ft). The highest point of this tower is actually the highest place you could be in the city of Barcelona. The tenth floor of the pod is open to the public.",
       "coords": "41.417215,2.114252"
     },
     {
-      "class_id": 26,
+      "class_id": 3,
       "name": "Barcelona Bosc Urbà",
       "photo_url": "https://cdn.atrapalo.com/common/photo/event/4/7/8/8474/339305/vertic_880_0.jpg",
       "description": "Barcelona Bosc Urbà- Travellers who have a thirst for adventure of the adrenaline-pumping kind should head to Barcelona Bosc Urbà, an urban adventure park that has everything from bungee jumping to zip lining and even an electric unicycle.",
       "coords": "41.411498,2.223980"
     },
     {
-      "class_id": 27,
+      "class_id": 11,
       "name": "Columns of the Temple of Augustus",
       "photo_url": "https://media-cdn.tripadvisor.com/media/photo-s/01/57/b1/fe/temple-of-augustus.jpg",
       "description": "The Temple of Augustus in Barcelona was a Roman temple built during the Imperial period in the colony of Barcino (modern day Barcelona). The temple was the central building on Tàber Hill, currently in Carrer del Paradís number 10, in the city's so-called Gothic Quarter. The dedication to Augustus is traditional, but unproven. If still in use by the 4th-century, the temple would have been closed during the persecution of pagans under the Christian emperors. At some point the temple was demolished, and its ruins were not discovered until the late 19th century, when three of its columns appeared on the construction site of Centre Excursionista de Catalunya.",
