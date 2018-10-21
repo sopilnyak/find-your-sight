@@ -18,7 +18,8 @@ PREDICT_LOG_DIR = './logs2'
 
 def predict(path_to_images, log_dir):
     id2labels_pickled = os.path.join(log_dir, 'label_names.pkl')
-    path_to_weights = os.path.join(log_dir, 'weights.h5')
+    # path_to_weights = os.path.join(log_dir, 'weights.h5')
+    path_to_weights = os.path.join(log_dir, 'weights_numpy')
     inference = InferenceModel(id2label_pickled=id2labels_pickled, path_to_weights=path_to_weights)
     for image_fname in os.listdir(path_to_images):
         full_fname = os.path.join(path_to_images, image_fname)
@@ -39,7 +40,8 @@ class InferenceModel:
     def __init__(self, id2label_pickled, path_to_weights):
         self._id2label = pickle.load(open(id2label_pickled, 'rb'))
         self._model = build_model(N_CLASSES)
-        self._model.load_weights(path_to_weights)
+        # self._model.load_weights(path_to_weights)
+        load_model_weights(self._model, path_to_weights)
 
     def _predict_proba(self, image):
         img = image
@@ -75,14 +77,24 @@ def prepare_image(original_image):
 def build_model(n_classes):
     inp_layer = Input(shape=IMAGE_SIZE)
     cnn = VGG16(include_top=False, weights=None)
-    for layer in cnn.layers:
-        layer.trainable = True
     x = cnn(inp_layer)
     x_average = GlobalAveragePooling2D()(x)
     x_max = GlobalMaxPool2D()(x)
     x = concatenate([x_max, x_average])
     x = Dense(n_classes, activation='softmax')(x)
     return Model(inputs=inp_layer, outputs=x)
+
+
+def load_model_weights(model, path_to_weights_dir):
+    for i, layer in enumerate(model.layers):
+        weights = []
+        lw_dir = os.path.join(path_to_weights_dir, f"layer{i:03d}")
+        for j, fn in enumerate(sorted(os.listdir(lw_dir))):
+            weights.append(np.load(os.path.join(lw_dir, f"{j:03d}")))
+        layer.set_weights(weights)
+
+
+
 
 
 if __name__ == '__main__':
