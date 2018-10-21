@@ -6,8 +6,8 @@ const mkdirp = require('mkdirp');
 const numPages = 40;
 const targetDir = 'images';
 const placesFile = 'places.txt';
-const cxId = '012532983433391292594:4jgsgu4qhvy';
-const apiKey = 'AIzaSyCfJPpUeOvrpAlykrCYokcXzL3Q1znjNCQ';
+const cxId = '';
+const apiKey = '';
 
 const client = new GoogleImages(cxId, apiKey);
 
